@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram</string>
+		<string>twitter</string>
+		<string>fb</string>
+		<string>whatsapp</string>
+		<string>youtube</string>
+		<string>snapchat</string>
+		<string>addressbook</string>
+	</array>
+	<key>NSLocationAlwaysUsageDescription2</key>
+	<string>We need access to your location to detect Wi-Fi networks</string>
+	<key>NSLocationWhenInUseUsageDescription2</key>
+	<string>We need access to your location to detect Wi-Fi networks</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+</dict>
+</plist>
