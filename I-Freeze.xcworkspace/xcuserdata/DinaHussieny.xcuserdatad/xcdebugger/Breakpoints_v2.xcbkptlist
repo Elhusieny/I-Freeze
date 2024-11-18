@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4EDCAECB-911E-4BE2-80BB-11B25B76837C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39CEB13B-63E3-429D-A0FD-D0DBC3B622EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "I-Freeze/Classes/location Manager Handle/ServerManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchConfiguration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96DCCF94-C638-42A0-B34E-5E7C8F26B288"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "I-Freeze/Classes/location Manager Handle/ServerManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchConfiguration()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "96DCCF94-C638-42A0-B34E-5E7C8F26B288 - 412b1d3ea8735299"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "I_Freeze.ServerManager.fetchConfiguration() -&gt; ()"
+                  moduleName = "I-Freeze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MAC/Desktop/Xcode%20projects/I-Freeze/I-Freeze/Classes/location%20Manager%20Handle/ServerManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2407">
+               </Location>
+               <Location
+                  uuid = "96DCCF94-C638-42A0-B34E-5E7C8F26B288 - 412b1d3ea8735299"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "I_Freeze.ServerManager.fetchConfiguration() -&gt; ()"
+                  moduleName = "I-Freeze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MAC/Desktop/Xcode%20projects/I-Freeze/I-Freeze/Classes/location%20Manager%20Handle/ServerManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2535">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E751D40-46E9-4917-A8BD-8022185E7636"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "I-Freeze/Classes/location Manager Handle/ServerManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchConfiguration()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

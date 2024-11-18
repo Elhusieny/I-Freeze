@@ -7,18 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68CC08C3D7761E3C9C87C2A9 /* Pods_I_Freeze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99D8C12392C6EE9EAAC202C /* Pods_I_Freeze.framework */; };
+		CA28EB592CD3B5BF008FC450 /* LicenseActivationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28EB582CD3B5BF008FC450 /* LicenseActivationScreen.swift */; };
+		CA2A9CF52CDFCEEC00D1F0F3 /* DeviceInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2A9CF42CDFCEEC00D1F0F3 /* DeviceInfoManager.swift */; };
 		CA34A70F2CC4E22C0017CF32 /* I_FreezeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34A70E2CC4E22C0017CF32 /* I_FreezeApp.swift */; };
-		CA34A7112CC4E22C0017CF32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34A7102CC4E22C0017CF32 /* ContentView.swift */; };
+		CA34A7112CC4E22C0017CF32 /* PermissionsNotifi_Locati_Photos_Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34A7102CC4E22C0017CF32 /* PermissionsNotifi_Locati_Photos_Phone.swift */; };
 		CA34A7132CC4E22E0017CF32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA34A7122CC4E22E0017CF32 /* Assets.xcassets */; };
 		CA34A7162CC4E22E0017CF32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA34A7152CC4E22E0017CF32 /* Preview Assets.xcassets */; };
+		CA34A7202CC4F9E90017CF32 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34A71F2CC4F9E90017CF32 /* LocationManager.swift */; };
+		CA34A7222CC506290017CF32 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34A7212CC506290017CF32 /* NotificationManager.swift */; };
+		CA34A7242CC519E20017CF32 /* PhoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34A7232CC519E20017CF32 /* PhoneManager.swift */; };
+		CA34A7262CC521470017CF32 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34A7252CC521470017CF32 /* PhotoManager.swift */; };
+		CA3A3F8D2CD8E4AB00FCA5ED /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A3F8C2CD8E4AB00FCA5ED /* KeyChainHelper.swift */; };
+		CA4720022CC8EB9400801ED7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4720012CC8EB9400801ED7 /* NetworkManager.swift */; };
+		CA49EB572CCE1BAA00C254CD /* System Scan Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49EB562CCE1BAA00C254CD /* System Scan Screen.swift */; };
+		CA4EE0E72CDB7963000F9669 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE0E62CDB7963000F9669 /* Models.swift */; };
+		CA4EE0E92CDB798C000F9669 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE0E82CDB798C000F9669 /* Utilities.swift */; };
+		CA4EE0EB2CDB79B4000F9669 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE0EA2CDB79B4000F9669 /* ViewModels.swift */; };
+		CA4EE0ED2CDB79D0000F9669 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE0EC2CDB79D0000F9669 /* DataServices.swift */; };
+		CA62FE192CCE27B7002F2588 /* DocumentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62FE182CCE27B7002F2588 /* DocumentManager.swift */; };
+		CA7FED342CE0CD1400E11072 /* NetworkControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FED332CE0CD1400E11072 /* NetworkControl.swift */; };
+		CAA7CC802CDA3647001F2BDE /* KioskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7CC7F2CDA3647001F2BDE /* KioskView.swift */; };
+		CAA7CC822CDA58AB001F2BDE /* RequestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7CC812CDA58AB001F2BDE /* RequestSupport.swift */; };
+		CAB9A5772CCE56FF007B7342 /* SecurityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB9A5762CCE56FF007B7342 /* SecurityScreen.swift */; };
+		CAC7FD2F2CCA5D0A00689F7F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7FD2E2CCA5D0A00689F7F /* HomeScreen.swift */; };
+		CADEA99B2CD22455009D34E6 /* AdminLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADEA99A2CD22455009D34E6 /* AdminLoginScreen.swift */; };
+		CADEA99D2CD22476009D34E6 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADEA99C2CD22476009D34E6 /* SettingScreen.swift */; };
+		CAEC62AF2CE1FB6A001065CE /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC62AE2CE1FB6A001065CE /* ConfigManager.swift */; };
+		CAEC62B12CE1FB9A001065CE /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC62B02CE1FB9A001065CE /* ServerManager.swift */; };
+		CAEC62B32CE1FBDC001065CE /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC62B22CE1FBDC001065CE /* LocationHelper.swift */; };
+		CAEC62B62CE204BE001065CE /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC62B52CE204BE001065CE /* NetworkMonitor.swift */; };
+		CAEEC1B82CD9265900619F13 /* PostAppsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEEC1B72CD9265900619F13 /* PostAppsNames.swift */; };
+		CAF55A7D2CE4A48300456279 /* WebFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF55A7C2CE4A48300456279 /* WebFilter.swift */; };
+		CAF55A7F2CE4E89A00456279 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF55A7E2CE4E89A00456279 /* AppManager.swift */; };
+		CAF89EFC2CE6148F000F1AA9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF89EFB2CE6148F000F1AA9 /* AppColors.swift */; };
+		CAFCAF0B2CC64BEB00163BD5 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCAF0A2CC64BEB00163BD5 /* WelcomeScreen.swift */; };
+		CAFCAF0D2CC656FE00163BD5 /* Accessibility Service Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCAF0C2CC656FE00163BD5 /* Accessibility Service Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90DA65B89CABE7D6C67DD2CC /* Pods-I-Freeze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I-Freeze.debug.xcconfig"; path = "Target Support Files/Pods-I-Freeze/Pods-I-Freeze.debug.xcconfig"; sourceTree = "<group>"; };
+		A9132FE6400F479E57C8815A /* Pods-I-Freeze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I-Freeze.release.xcconfig"; path = "Target Support Files/Pods-I-Freeze/Pods-I-Freeze.release.xcconfig"; sourceTree = "<group>"; };
+		CA28EB582CD3B5BF008FC450 /* LicenseActivationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseActivationScreen.swift; sourceTree = "<group>"; };
+		CA2A9CF42CDFCEEC00D1F0F3 /* DeviceInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoManager.swift; sourceTree = "<group>"; };
 		CA34A70B2CC4E22C0017CF32 /* I-Freeze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I-Freeze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA34A70E2CC4E22C0017CF32 /* I_FreezeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_FreezeApp.swift; sourceTree = "<group>"; };
-		CA34A7102CC4E22C0017CF32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA34A7102CC4E22C0017CF32 /* PermissionsNotifi_Locati_Photos_Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsNotifi_Locati_Photos_Phone.swift; sourceTree = "<group>"; };
 		CA34A7122CC4E22E0017CF32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA34A7152CC4E22E0017CF32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA34A71F2CC4F9E90017CF32 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CA34A7212CC506290017CF32 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CA34A7232CC519E20017CF32 /* PhoneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneManager.swift; sourceTree = "<group>"; };
+		CA34A7252CC521470017CF32 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		CA3A3F8C2CD8E4AB00FCA5ED /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
+		CA4720012CC8EB9400801ED7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CA49EB562CCE1BAA00C254CD /* System Scan Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System Scan Screen.swift"; sourceTree = "<group>"; };
+		CA4EE0E62CDB7963000F9669 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CA4EE0E82CDB798C000F9669 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CA4EE0EA2CDB79B4000F9669 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		CA4EE0EC2CDB79D0000F9669 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		CA62FE182CCE27B7002F2588 /* DocumentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentManager.swift; sourceTree = "<group>"; };
+		CA7FED332CE0CD1400E11072 /* NetworkControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkControl.swift; sourceTree = "<group>"; };
+		CAA7CC7F2CDA3647001F2BDE /* KioskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskView.swift; sourceTree = "<group>"; };
+		CAA7CC812CDA58AB001F2BDE /* RequestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSupport.swift; sourceTree = "<group>"; };
+		CAB9A5762CCE56FF007B7342 /* SecurityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScreen.swift; sourceTree = "<group>"; };
+		CAC7FD2E2CCA5D0A00689F7F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		CADEA9982CD21F0D009D34E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CADEA99A2CD22455009D34E6 /* AdminLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginScreen.swift; sourceTree = "<group>"; };
+		CADEA99C2CD22476009D34E6 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
+		CAEC62AE2CE1FB6A001065CE /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		CAEC62B02CE1FB9A001065CE /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		CAEC62B22CE1FBDC001065CE /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		CAEC62B52CE204BE001065CE /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		CAEEC1B72CD9265900619F13 /* PostAppsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAppsNames.swift; sourceTree = "<group>"; };
+		CAF55A7C2CE4A48300456279 /* WebFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFilter.swift; sourceTree = "<group>"; };
+		CAF55A7E2CE4E89A00456279 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		CAF89EFB2CE6148F000F1AA9 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		CAFCAF0A2CC64BEB00163BD5 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		CAFCAF0C2CC656FE00163BD5 /* Accessibility Service Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Accessibility Service Screen.swift"; sourceTree = "<group>"; };
+		D99D8C12392C6EE9EAAC202C /* Pods_I_Freeze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_Freeze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +93,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CC08C3D7761E3C9C87C2A9 /* Pods_I_Freeze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6715262DEB383518EEFB1008 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D99D8C12392C6EE9EAAC202C /* Pods_I_Freeze.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA34A7022CC4E22C0017CF32 = {
 			isa = PBXGroup;
 			children = (
 				CA34A70D2CC4E22C0017CF32 /* I-Freeze */,
 				CA34A70C2CC4E22C0017CF32 /* Products */,
+				FC2AC5D596BF6A62748149E9 /* Pods */,
+				6715262DEB383518EEFB1008 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +129,12 @@
 		CA34A70D2CC4E22C0017CF32 /* I-Freeze */ = {
 			isa = PBXGroup;
 			children = (
+				CA4EE0E12CDB7893000F9669 /* apis */,
+				CAFCAF092CC64AFA00163BD5 /* ui */,
+				CA34A71E2CC4F9010017CF32 /* Classes */,
 				CA34A70E2CC4E22C0017CF32 /* I_FreezeApp.swift */,
-				CA34A7102CC4E22C0017CF32 /* ContentView.swift */,
 				CA34A7122CC4E22E0017CF32 /* Assets.xcassets */,
+				CADEA9982CD21F0D009D34E6 /* Info.plist */,
 				CA34A7142CC4E22E0017CF32 /* Preview Content */,
 			);
 			path = "I-Freeze";
@@ -67,6 +148,148 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CA34A71E2CC4F9010017CF32 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CAED7A2E2CE37D4A0053EEAE /* permissionClasses */,
+				CAEC62B42CE204A0001065CE /* networkMonitor */,
+				CAEC62AD2CE1FB3E001065CE /* location Manager Handle */,
+				CA3A3F8B2CD8E48900FCA5ED /* dataBase */,
+				CA62FE182CCE27B7002F2588 /* DocumentManager.swift */,
+				CAEC62AE2CE1FB6A001065CE /* ConfigManager.swift */,
+				CA2A9CF42CDFCEEC00D1F0F3 /* DeviceInfoManager.swift */,
+				CAF89EFB2CE6148F000F1AA9 /* AppColors.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CA3A3F8B2CD8E48900FCA5ED /* dataBase */ = {
+			isa = PBXGroup;
+			children = (
+				CA3A3F8C2CD8E4AB00FCA5ED /* KeyChainHelper.swift */,
+			);
+			path = dataBase;
+			sourceTree = "<group>";
+		};
+		CA49EB552CCE1B8000C254CD /* system Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				CA49EB562CCE1BAA00C254CD /* System Scan Screen.swift */,
+				CAB9A5762CCE56FF007B7342 /* SecurityScreen.swift */,
+			);
+			path = "system Scanning";
+			sourceTree = "<group>";
+		};
+		CA4EE0E12CDB7893000F9669 /* apis */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EE0E52CDB78DE000F9669 /* model */,
+				CA4EE0E42CDB78D3000F9669 /* view Model */,
+				CA4EE0E32CDB78B9000F9669 /* helper Classes */,
+				CA4EE0E22CDB789E000F9669 /* api Handling */,
+			);
+			path = apis;
+			sourceTree = "<group>";
+		};
+		CA4EE0E22CDB789E000F9669 /* api Handling */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EE0EC2CDB79D0000F9669 /* DataServices.swift */,
+			);
+			path = "api Handling";
+			sourceTree = "<group>";
+		};
+		CA4EE0E32CDB78B9000F9669 /* helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EE0E82CDB798C000F9669 /* Utilities.swift */,
+			);
+			path = "helper Classes";
+			sourceTree = "<group>";
+		};
+		CA4EE0E42CDB78D3000F9669 /* view Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EE0EA2CDB79B4000F9669 /* ViewModels.swift */,
+			);
+			path = "view Model";
+			sourceTree = "<group>";
+		};
+		CA4EE0E52CDB78DE000F9669 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EE0E62CDB7963000F9669 /* Models.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CADEA9992CD2241E009D34E6 /* adminLogin */ = {
+			isa = PBXGroup;
+			children = (
+				CADEA99A2CD22455009D34E6 /* AdminLoginScreen.swift */,
+				CADEA99C2CD22476009D34E6 /* SettingScreen.swift */,
+				CAEEC1B72CD9265900619F13 /* PostAppsNames.swift */,
+				CA7FED332CE0CD1400E11072 /* NetworkControl.swift */,
+				CAF55A7C2CE4A48300456279 /* WebFilter.swift */,
+				CAF55A7E2CE4E89A00456279 /* AppManager.swift */,
+			);
+			path = adminLogin;
+			sourceTree = "<group>";
+		};
+		CAEC62AD2CE1FB3E001065CE /* location Manager Handle */ = {
+			isa = PBXGroup;
+			children = (
+				CAEC62B02CE1FB9A001065CE /* ServerManager.swift */,
+				CAEC62B22CE1FBDC001065CE /* LocationHelper.swift */,
+			);
+			path = "location Manager Handle";
+			sourceTree = "<group>";
+		};
+		CAEC62B42CE204A0001065CE /* networkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				CAEC62B52CE204BE001065CE /* NetworkMonitor.swift */,
+				CA4720012CC8EB9400801ED7 /* NetworkManager.swift */,
+			);
+			path = networkMonitor;
+			sourceTree = "<group>";
+		};
+		CAED7A2E2CE37D4A0053EEAE /* permissionClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CA34A7252CC521470017CF32 /* PhotoManager.swift */,
+				CA34A7232CC519E20017CF32 /* PhoneManager.swift */,
+				CA34A7212CC506290017CF32 /* NotificationManager.swift */,
+				CA34A71F2CC4F9E90017CF32 /* LocationManager.swift */,
+			);
+			path = permissionClasses;
+			sourceTree = "<group>";
+		};
+		CAFCAF092CC64AFA00163BD5 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CADEA9992CD2241E009D34E6 /* adminLogin */,
+				CA49EB552CCE1B8000C254CD /* system Scanning */,
+				CA34A7102CC4E22C0017CF32 /* PermissionsNotifi_Locati_Photos_Phone.swift */,
+				CAFCAF0A2CC64BEB00163BD5 /* WelcomeScreen.swift */,
+				CAFCAF0C2CC656FE00163BD5 /* Accessibility Service Screen.swift */,
+				CAC7FD2E2CCA5D0A00689F7F /* HomeScreen.swift */,
+				CA28EB582CD3B5BF008FC450 /* LicenseActivationScreen.swift */,
+				CAA7CC7F2CDA3647001F2BDE /* KioskView.swift */,
+				CAA7CC812CDA58AB001F2BDE /* RequestSupport.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		FC2AC5D596BF6A62748149E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90DA65B89CABE7D6C67DD2CC /* Pods-I-Freeze.debug.xcconfig */,
+				A9132FE6400F479E57C8815A /* Pods-I-Freeze.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA34A7192CC4E22E0017CF32 /* Build configuration list for PBXNativeTarget "I-Freeze" */;
 			buildPhases = (
+				5AA247D66759E9742EC4D3DD /* [CP] Check Pods Manifest.lock */,
 				CA34A7072CC4E22C0017CF32 /* Sources */,
 				CA34A7082CC4E22C0017CF32 /* Frameworks */,
 				CA34A7092CC4E22C0017CF32 /* Resources */,
+				1F761615395733F44609C75C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +357,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F761615395733F44609C75C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I-Freeze/Pods-I-Freeze-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I-Freeze/Pods-I-Freeze-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-I-Freeze/Pods-I-Freeze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AA247D66759E9742EC4D3DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-I-Freeze-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA34A7072CC4E22C0017CF32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA34A7112CC4E22C0017CF32 /* ContentView.swift in Sources */,
+				CADEA99D2CD22476009D34E6 /* SettingScreen.swift in Sources */,
+				CAF89EFC2CE6148F000F1AA9 /* AppColors.swift in Sources */,
+				CAEC62B32CE1FBDC001065CE /* LocationHelper.swift in Sources */,
+				CA4720022CC8EB9400801ED7 /* NetworkManager.swift in Sources */,
+				CA4EE0E92CDB798C000F9669 /* Utilities.swift in Sources */,
+				CA4EE0ED2CDB79D0000F9669 /* DataServices.swift in Sources */,
+				CAEC62B12CE1FB9A001065CE /* ServerManager.swift in Sources */,
+				CA49EB572CCE1BAA00C254CD /* System Scan Screen.swift in Sources */,
+				CAF55A7F2CE4E89A00456279 /* AppManager.swift in Sources */,
+				CAEC62B62CE204BE001065CE /* NetworkMonitor.swift in Sources */,
+				CA34A7262CC521470017CF32 /* PhotoManager.swift in Sources */,
+				CADEA99B2CD22455009D34E6 /* AdminLoginScreen.swift in Sources */,
+				CA2A9CF52CDFCEEC00D1F0F3 /* DeviceInfoManager.swift in Sources */,
+				CA3A3F8D2CD8E4AB00FCA5ED /* KeyChainHelper.swift in Sources */,
+				CA4EE0E72CDB7963000F9669 /* Models.swift in Sources */,
+				CA34A7242CC519E20017CF32 /* PhoneManager.swift in Sources */,
+				CA34A7112CC4E22C0017CF32 /* PermissionsNotifi_Locati_Photos_Phone.swift in Sources */,
+				CA7FED342CE0CD1400E11072 /* NetworkControl.swift in Sources */,
 				CA34A70F2CC4E22C0017CF32 /* I_FreezeApp.swift in Sources */,
+				CAEC62AF2CE1FB6A001065CE /* ConfigManager.swift in Sources */,
+				CAA7CC802CDA3647001F2BDE /* KioskView.swift in Sources */,
+				CAFCAF0B2CC64BEB00163BD5 /* WelcomeScreen.swift in Sources */,
+				CAC7FD2F2CCA5D0A00689F7F /* HomeScreen.swift in Sources */,
+				CA34A7222CC506290017CF32 /* NotificationManager.swift in Sources */,
+				CAFCAF0D2CC656FE00163BD5 /* Accessibility Service Screen.swift in Sources */,
+				CA62FE192CCE27B7002F2588 /* DocumentManager.swift in Sources */,
+				CAEEC1B82CD9265900619F13 /* PostAppsNames.swift in Sources */,
+				CA28EB592CD3B5BF008FC450 /* LicenseActivationScreen.swift in Sources */,
+				CA4EE0EB2CDB79B4000F9669 /* ViewModels.swift in Sources */,
+				CAF55A7D2CE4A48300456279 /* WebFilter.swift in Sources */,
+				CAA7CC822CDA58AB001F2BDE /* RequestSupport.swift in Sources */,
+				CA34A7202CC4F9E90017CF32 /* LocationManager.swift in Sources */,
+				CAB9A5772CCE56FF007B7342 /* SecurityScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +559,7 @@
 		};
 		CA34A71A2CC4E22E0017CF32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DA65B89CABE7D6C67DD2CC /* Pods-I-Freeze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,11 +569,18 @@
 				DEVELOPMENT_TEAM = 9NDJC2HJ88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "I-Freeze/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"A string that describes why your app needs access to the camera \"";
+				INFOPLIST_KEY_NSContactsUsageDescription = "\"This app requires access to your contacts to enhance communication features\"";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires access to your location to provide location-based features even when the app is not in use";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to your location to provide location-based features";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to your photo library to allow you to upload photos\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +596,7 @@
 		};
 		CA34A71B2CC4E22E0017CF32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9132FE6400F479E57C8815A /* Pods-I-Freeze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,11 +606,18 @@
 				DEVELOPMENT_TEAM = 9NDJC2HJ88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "I-Freeze/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"A string that describes why your app needs access to the camera \"";
+				INFOPLIST_KEY_NSContactsUsageDescription = "\"This app requires access to your contacts to enhance communication features\"";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires access to your location to provide location-based features even when the app is not in use";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to your location to provide location-based features";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to your photo library to allow you to upload photos\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
