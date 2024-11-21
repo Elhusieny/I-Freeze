@@ -16,7 +16,7 @@ struct WelcomeScreen: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 80, height: 80)
                         
-                        Text("-Freeze")
+                        Text("i-Freeze")
                             .foregroundColor(.white)
                             .font(.system(size: 40, weight: .bold)) // Larger title with bold weight
                     }
