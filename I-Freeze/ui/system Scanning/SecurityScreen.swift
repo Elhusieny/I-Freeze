@@ -13,12 +13,11 @@ struct SecurityScreen: View {
     var body: some View {
         ZStack {
             // Background Gradient
-            Color.darkBlue
+            Color(hex: "#175AA8")
                 .ignoresSafeArea()
-            
-            ScrollView(.vertical)
-            {
                 VStack {
+                ScrollView(.vertical)
+                    {
                     // Title Section
                     Image(systemName: "shield.fill")
                         .resizable()
@@ -65,7 +64,6 @@ struct SecurityScreen: View {
                                 )
                                 
                                 .padding(.horizontal,10)
-                                .shadow(color: .black.opacity(0.9), radius: 5, x: 0, y: 2) // Optional shadow for depth
                                 Spacer()
                                 
                                 
@@ -168,11 +166,11 @@ struct SecurityOptionButton: View {
                 .frame(maxWidth: .infinity)  // Makes the button expand to full width
                 .background(
                     LinearGradient(
-                        gradient: Gradient(colors: [Color.darkBlue, Color.blue.opacity(0.7)]),
+                        gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
                         startPoint: .leading,
                         endPoint: .trailing))
                 .cornerRadius(10)
-                .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+                .shadow(color: Color.black.opacity(0.4), radius: 5, x: 0, y: 2)
             }
         }
         .padding(.top, 10)

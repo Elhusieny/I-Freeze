@@ -11,8 +11,8 @@ struct RequestSupport: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.darkBlue
-                        .ignoresSafeArea()
+                Color(hex: "#175AA8")
+                    .ignoresSafeArea()
                 VStack(spacing: 20) {
                     Spacer()
                     Text("Request Support")
@@ -71,11 +71,9 @@ struct RequestSupport: View {
                     }
                     .background(
                         LinearGradient(
-                            gradient: Gradient(colors: [Color.darkBlue, Color.blue.opacity(0.7)]),
+                            gradient: Gradient(colors: [Color.lightBlue.opacity(0.9), Color.lightBlue.opacity(0.2)]),
                             startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
+                            endPoint: .trailing))
                     
                     .cornerRadius(10) // Apply corner radius to the outer container
                     .padding(.horizontal,20)
@@ -102,11 +100,9 @@ struct RequestSupport: View {
                         // Makes the button expand to full width
                                 .background(
                                     LinearGradient(
-                                        gradient: Gradient(colors: [Color.darkBlue, Color.blue.opacity(0.7)]),
+                                        gradient: Gradient(colors: [Color.lightBlue.opacity(0.9), Color.lightBlue.opacity(0.2)]),
                                         startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
+                                        endPoint: .trailing))
                                 .cornerRadius(10)
                                 .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
                                 .padding(.horizontal,120)

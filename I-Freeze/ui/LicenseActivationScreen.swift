@@ -1,15 +1,15 @@
-// LicenseActivationScreen.swift
-
 import SwiftUI
+
 struct LicenseActivationScreen: View {
     @Binding var isLicensed: Bool
-    @StateObject private var viewModel = LicenseActivationViewModel()
-    
+    @StateObject private var activationViewModel = LicenseActivationViewModel()
+    @StateObject private var authViewModel = AuthViewModel()
+
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.darkBlue
-                        .ignoresSafeArea()
+                Color(hex: "#175AA8")                             .ignoresSafeArea()
+                
                 VStack(spacing: 20) {
                     Text("Activate Your License")
                         .font(.title)
@@ -22,11 +22,17 @@ struct LicenseActivationScreen: View {
                         .padding(.horizontal)
                         .foregroundColor(.white)
                     
-                    TextField("Activation Key", text: $viewModel.activationKey)
+                    TextField("Activation Key", text: $activationViewModel.activationKey)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
                     
-                    Button(action: viewModel.activateLicense) {
+                    Button {
+                        activationViewModel.activateLicense { isSuccess in
+                            if isSuccess {
+                                handleSuccessfulActivation()
+                            }
+                        }
+                    } label: {
                         Text("Activate")
                             .font(.headline)
                             .foregroundColor(.white)
@@ -34,26 +40,29 @@ struct LicenseActivationScreen: View {
                             .frame(maxWidth: .infinity)
                             .background(
                                 LinearGradient(
-                                    gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                                    gradient: Gradient(colors: [Color.lightBlue.opacity(0.9), Color.lightBlue.opacity(0.2)]),
                                     startPoint: .leading,
-                                    endPoint: .trailing))                            .cornerRadius(10)
+                                    endPoint: .trailing))
+                            .cornerRadius(10)
                             .shadow(color: Color.black.opacity(0.4), radius: 5, x: 0, y: 2)
                     }
+                    
                     .padding(.horizontal)
-                    .alert(isPresented: $viewModel.showAlert) {
+                    .alert(isPresented: $activationViewModel.showAlert) {
                         Alert(
-                            title: Text(viewModel.activationMessage),
-                            message: Text(viewModel.activationMessage.contains("Successful") ? "All features are now unlocked." : "Please check your activation key."),
+                            title: Text(activationViewModel.activationMessage),
+                            message: Text(activationViewModel.activationMessage.contains("Successful") ? "All features are now unlocked." : "Please check your activation key."),
                             primaryButton: .default(Text("OK")) {
-                                if viewModel.activationMessage.contains("Successful") {
+                                if activationViewModel.activationMessage.contains("Successful") {
                                     isLicensed = true
-                                    //viewModel.navigateToHome = true
+                                    // Navigate to home when successful
+                                    activationViewModel.navigateToHome = true
                                 }
                             },
                             secondaryButton: .default(Text("Go to Home")) {
-                                if viewModel.activationMessage.contains("Successful") {
+                                if activationViewModel.activationMessage.contains("Successful") {
                                     isLicensed = true
-                                    viewModel.navigateToHome = true
+                                    activationViewModel.navigateToHome = true
                                 }
                             }
                         )
@@ -76,11 +85,32 @@ struct LicenseActivationScreen: View {
                 }
             }
             .background(
-                NavigationLink(destination: HomeView(), isActive: $viewModel.navigateToHome) { EmptyView() }
+                NavigationLink(destination: HomeView(), isActive: $activationViewModel.navigateToHome) { EmptyView() }
             )
         }
     }
+
+    /// Handle successful license activation
+    private func handleSuccessfulActivation() {
+        // Retrieve the deviceId from Keychain
+        guard var storedDeviceId = KeychainHelper.shared.load(key: "deviceId") else {
+            print("Error: DeviceId not found in Keychain.")
+            return
+        }
+        // Clean up deviceId by trimming whitespace and removing quotes
+        storedDeviceId = storedDeviceId.trimmingCharacters(in: .whitespacesAndNewlines).replacingOccurrences(of: "\"", with: "")
+        // Fetch token using the deviceId
+        authViewModel.fetchToken(deviceId: storedDeviceId) { success in
+            if success {
+                print("success")
+                isLicensed = true
+            } else {
+                print("Error: Unable to fetch token.")
+            }
+        }
+    }
 }
+    
 
 
 struct LicenseActivationScreen_Previews: PreviewProvider {

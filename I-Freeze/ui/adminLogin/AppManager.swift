@@ -12,7 +12,7 @@ struct AppManager: View {
         
         NavigationStack {
             ZStack(alignment: .top) {
-                Color.darkBlue
+                Color(hex: "#175AA8")
                     .ignoresSafeArea()
                 ScrollView(.vertical)
                 {

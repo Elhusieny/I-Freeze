@@ -4,8 +4,7 @@ struct WelcomeScreen: View {
     var body: some View {
         NavigationStack { // Use NavigationStack instead of NavigationView
             ZStack {
-                Color.darkBlue
-                        .ignoresSafeArea()
+                Color(hex: "#175AA8")                             .ignoresSafeArea()
                 VStack(spacing: 20) {
                     Spacer() // Push content to the center vertically
                     
@@ -16,11 +15,10 @@ struct WelcomeScreen: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 80, height: 80)
                         
-                        Text("-Freeze")
+                        Text("i-Freeze")
                             .foregroundColor(.white)
                             .font(.system(size: 40, weight: .bold)) // Larger title with bold weight
                     }
-        
                     // Slogan
                     Text("Freeze Your Risks")
                         .foregroundColor(.white)
@@ -75,7 +73,7 @@ struct WelcomeScreen: View {
                         .frame(width:130)
                         .background(
                             LinearGradient(
-                                gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                                gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
                                 startPoint: .leading,
                                 endPoint: .trailing))
                         .cornerRadius(10)
@@ -98,7 +96,6 @@ struct WelcomeScreen: View {
         }
     }
 }
-
 struct WelcomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeScreen()

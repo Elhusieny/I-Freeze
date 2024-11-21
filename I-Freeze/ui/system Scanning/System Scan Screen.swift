@@ -1,6 +1,5 @@
 import SwiftUI
 import LocalAuthentication
-
 struct SystemScanScreen: View {
     @StateObject private var documentManager = DocumentManager()
     @State private var showAlert = false
@@ -10,10 +9,11 @@ struct SystemScanScreen: View {
        @State private var filesForDeletion: [String] = [] // Array to hold selected files for deletion
        @State private var tempFilesToDelete: [String] = [] // Array to hold temporary files
 
+
     var body: some View {
         ZStack {
-            Color.darkBlue
-                    .ignoresSafeArea()
+            Color(hex: "#175AA8")
+                .ignoresSafeArea()
             VStack {
                 // Top Section with Image and Text
                 topSection
@@ -54,7 +54,6 @@ struct SystemScanScreen: View {
                 .scaledToFit()
                 .frame(width: 120, height: 120) // Slightly larger logo
                 .padding(.top, 40)
-                .background(Color.darkBlue)
 
             Text("You are Protected!")
                 .font(.title2)
@@ -112,10 +111,10 @@ struct SystemScanScreen: View {
         }
 
         if isDeveloperModeEnabled() {
-            scanResults.append("⚠️ Developer Mode is enabled.")
-        } else {
-            scanResults.append("✅ Developer Mode is disabled.")
-        }
+           scanResults.append("⚠️ Developer Mode is enabled.")
+       } else {
+           scanResults.append("✅ Developer Mode is disabled.")
+       }
 
         if hasUntrustedAppsInstalled() {
             scanResults.append("🚨 Warning: Untrusted apps detected.")
@@ -161,8 +160,18 @@ struct SystemScanScreen: View {
     }
 
     func isDeveloperModeEnabled() -> Bool {
-        return false // Placeholder for future implementation
+        if #available(iOS 16.0, *) {
+            //Update to macOS 14 (or later).
+            //Install Xcode 15 (or later).
+            //  return UIDevice.current.isDeveloperModeEnabled
+            return false
+        } else {
+            return false
+        }
     }
+
+
+
 
     func hasUntrustedAppsInstalled() -> Bool {
         let untrustedPaths = ["/User/Applications/", "/private/var/lib/apt/", "/private/var/stash/"]
@@ -291,12 +300,11 @@ struct PermissionButton: View {
                 } .padding()
                     .frame(maxWidth: .infinity)  // Makes the button expand to full width
                     .background(
-                        LinearGradient(
-                            gradient: Gradient(colors: [Color.darkBlue, Color.blue.opacity(0.7)]),
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
+                
+                            LinearGradient(
+                                gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
+                                startPoint: .leading,
+                                endPoint: .trailing))
                     .cornerRadius(10)
                     .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
                 }
@@ -340,7 +348,7 @@ struct NavigationButton<Destination: View>: View {
             .frame(maxWidth: .infinity)  // Makes the button expand to full width
             .background(
                 LinearGradient(
-                    gradient: Gradient(colors: [Color.darkBlue, Color.blue.opacity(0.7)]),
+                    gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
                     startPoint: .leading,
                     endPoint: .trailing))
             .cornerRadius(10)

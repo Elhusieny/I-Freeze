@@ -15,7 +15,7 @@ class ConfigManager: ObservableObject {
     
     
     func startConfigPolling() {
-        configCheckTimer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] _ in
+        configCheckTimer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) {[weak self] _ in
             ServerManager.shared.fetchConfiguration()
         }
     }

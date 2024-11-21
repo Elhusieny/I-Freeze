@@ -12,8 +12,7 @@ struct SettingScreen: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.darkBlue
-                        .ignoresSafeArea()
+                Color(hex: "#175AA8")                             .ignoresSafeArea()
                 VStack(spacing: 0) {
                     topSection
                     mainSection
@@ -53,7 +52,6 @@ struct SettingScreen: View {
         }
         .frame(maxWidth: .infinity)
         .padding()
-        .background(Color.blue.opacity(0.3).cornerRadius(15))
         .padding(.horizontal, 20)
         .padding(.top, 20)
         .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 4)
@@ -134,7 +132,12 @@ struct SettingScreen: View {
         }
         .padding(.horizontal, 20)
         .padding(.top, 10)
-        .background(Color.white.opacity(0.2))
+        .padding(.bottom,10)
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
+                startPoint: .leading,
+                endPoint: .trailing))
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
         
@@ -163,6 +166,8 @@ struct SettingScreen: View {
             .padding()
             .background(Color.white.opacity(0.1))
             .cornerRadius(10)
+            .padding(.bottom,10)
+
         }// Add this to SettingScreen to observe changes to Kiosk Mode
         .onReceive(NotificationCenter.default.publisher(for: .kioskModeChanged)) { notification in
             if let enabled = notification.object as? Bool {
@@ -172,10 +177,13 @@ struct SettingScreen: View {
         
         .padding(.horizontal, 20)
         .padding(.top, 10)
-        .background(Color.white.opacity(0.2))
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
+                startPoint: .leading,
+                endPoint: .trailing))
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
-    
     }
     private var sendAppNamesButton: some View {
         VStack {

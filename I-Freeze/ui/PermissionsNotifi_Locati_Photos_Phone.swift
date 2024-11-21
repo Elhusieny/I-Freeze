@@ -20,8 +20,7 @@ struct PermissionsNotifi_Locati_Photos_Phone: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.darkBlue
-                .ignoresSafeArea()
+                Color(hex: "#175AA8")                             .ignoresSafeArea()
                 NavigationStack() {
                     Spacer()
                     PermissionSection(
@@ -111,11 +110,9 @@ struct PermissionsNotifi_Locati_Photos_Phone: View {
                             .frame(width:130)
                             .background(
                                 LinearGradient(
-                                    gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                                    gradient: Gradient(colors: [Color.lightBlue.opacity(0.9), Color.lightBlue.opacity(0.2)]),
                                     startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
+                                    endPoint: .trailing))
                             .cornerRadius(10)
                             .padding(.horizontal, 20)
                             
@@ -227,11 +224,9 @@ struct PermissionsNotifi_Locati_Photos_Phone: View {
                     .frame(maxWidth: .infinity)
                     .background(
                         LinearGradient(
-                            gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                            gradient: Gradient(colors: [Color.lightBlue.opacity(0.9), Color.lightBlue.opacity(0.2)]),
                             startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
+                            endPoint: .trailing))
                     .cornerRadius(10)
                     .padding(.horizontal, 20)
                     .shadow(color: Color.black.opacity(0.4), radius: 5, x: 0, y: 2)
@@ -253,11 +248,10 @@ struct PermissionsNotifi_Locati_Photos_Phone: View {
                         .frame(maxWidth: .infinity)
                         .background(
                             LinearGradient(
-                                gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                                gradient: Gradient(colors: [Color.lightBlue.opacity(0.9), Color.lightBlue.opacity(0.2)]),
                                 startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )                        .cornerRadius(10)
+                                endPoint: .trailing))
+                        .cornerRadius(10)
                         .padding(.horizontal, 20)
                         .shadow(color: Color.black.opacity(0.4), radius: 5, x: 0, y: 2)
 

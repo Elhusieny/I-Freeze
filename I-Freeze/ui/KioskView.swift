@@ -9,9 +9,8 @@ struct KioskView: View {
 
     var body: some View {
         ZStack {
-            Color.darkBlue
+            Color(hex: "#175AA8")
                 .ignoresSafeArea()
-            
             VStack(spacing: 20) {
                 // Header
                 Text("Kiosk Mode")
@@ -87,8 +86,12 @@ struct KioskView: View {
                 action: exitKioskMode
             )
             .padding(.horizontal, 40)
+            .padding(.bottom,10)
+            
         }
         .padding(.top, 20)
+        .background(Color.white.opacity(0.1))
+        .cornerRadius(10)
     }
     
     // Guided Access Instructions Content
@@ -152,11 +155,9 @@ struct CustomButton: View {
             .frame(maxWidth: .infinity)
             .background(
                 LinearGradient(
-                    gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                    gradient: Gradient(colors: [Color.lightBlue.opacity(0.9), Color.lightBlue.opacity(0.2)]),
                     startPoint: .leading,
-                    endPoint: .trailing
-                )
-            )
+                    endPoint: .trailing))
             .cornerRadius(10)
 
         .shadow(color: Color.black.opacity(0.4), radius: 5, x: 0, y: 2)

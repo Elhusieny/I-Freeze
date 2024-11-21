@@ -51,7 +51,7 @@ struct Device: Codable {
     let autoScan: Bool
     let scanTime: String
     let devicePassword: String
-    let flag: Bool
+    let flag: Bool?
     let blockWiFi: Bool
     let whiteListWiFi: Bool
     let blockListURLs: Bool
@@ -67,6 +67,7 @@ struct Device: Codable {
     let updatedOn: String
     let updatedBy: String
 }
+
 //The model will contain all the fields needed for the device information, aligning with the structure expected by the server.
 // DeviceInfo.swift activate license
 struct DeviceInfo: Codable {
@@ -100,4 +101,7 @@ struct LocationData: Codable {
         case deviceId = "DeviceId"
     }
 }
-
+struct TokenResponse: Codable {
+    let token: String
+    let expiration: String
+}

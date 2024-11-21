@@ -15,8 +15,7 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.darkBlue
-                        .ignoresSafeArea()
+                Color(hex: "#175AA8")                             .ignoresSafeArea()
                 VStack {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(minimum: 150)), count: 2), spacing: 20) {
                         ForEach(functions, id: \.0) { function in

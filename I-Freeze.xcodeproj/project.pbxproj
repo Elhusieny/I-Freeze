@@ -25,6 +25,7 @@
 		CA4EE0E92CDB798C000F9669 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE0E82CDB798C000F9669 /* Utilities.swift */; };
 		CA4EE0EB2CDB79B4000F9669 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE0EA2CDB79B4000F9669 /* ViewModels.swift */; };
 		CA4EE0ED2CDB79D0000F9669 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE0EC2CDB79D0000F9669 /* DataServices.swift */; };
+		CA5AA0C62CEF4C4E004BC9A7 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AA0C52CEF4C4E004BC9A7 /* SplashScreen.swift */; };
 		CA62FE192CCE27B7002F2588 /* DocumentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62FE182CCE27B7002F2588 /* DocumentManager.swift */; };
 		CA7FED342CE0CD1400E11072 /* NetworkControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FED332CE0CD1400E11072 /* NetworkControl.swift */; };
 		CAA7CC802CDA3647001F2BDE /* KioskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA7CC7F2CDA3647001F2BDE /* KioskView.swift */; };
@@ -66,6 +67,7 @@
 		CA4EE0E82CDB798C000F9669 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CA4EE0EA2CDB79B4000F9669 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
 		CA4EE0EC2CDB79D0000F9669 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		CA5AA0C52CEF4C4E004BC9A7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		CA62FE182CCE27B7002F2588 /* DocumentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentManager.swift; sourceTree = "<group>"; };
 		CA7FED332CE0CD1400E11072 /* NetworkControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkControl.swift; sourceTree = "<group>"; };
 		CAA7CC7F2CDA3647001F2BDE /* KioskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskView.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				CA28EB582CD3B5BF008FC450 /* LicenseActivationScreen.swift */,
 				CAA7CC7F2CDA3647001F2BDE /* KioskView.swift */,
 				CAA7CC812CDA58AB001F2BDE /* RequestSupport.swift */,
+				CA5AA0C52CEF4C4E004BC9A7 /* SplashScreen.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				CA34A7222CC506290017CF32 /* NotificationManager.swift in Sources */,
 				CAFCAF0D2CC656FE00163BD5 /* Accessibility Service Screen.swift in Sources */,
 				CA62FE192CCE27B7002F2588 /* DocumentManager.swift in Sources */,
+				CA5AA0C62CEF4C4E004BC9A7 /* SplashScreen.swift in Sources */,
 				CAEEC1B82CD9265900619F13 /* PostAppsNames.swift in Sources */,
 				CA28EB592CD3B5BF008FC450 /* LicenseActivationScreen.swift in Sources */,
 				CA4EE0EB2CDB79B4000F9669 /* ViewModels.swift in Sources */,
@@ -561,7 +565,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90DA65B89CABE7D6C67DD2CC /* Pods-I-Freeze.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -570,6 +576,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "I-Freeze/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "i-Freeze";
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"A string that describes why your app needs access to the camera \"";
 				INFOPLIST_KEY_NSContactsUsageDescription = "\"This app requires access to your contacts to enhance communication features\"";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires access to your location to provide location-based features even when the app is not in use";
@@ -580,7 +587,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,7 +606,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9132FE6400F479E57C8815A /* Pods-I-Freeze.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -608,6 +617,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "I-Freeze/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "i-Freeze";
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"A string that describes why your app needs access to the camera \"";
 				INFOPLIST_KEY_NSContactsUsageDescription = "\"This app requires access to your contacts to enhance communication features\"";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires access to your location to provide location-based features even when the app is not in use";
@@ -618,7 +628,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

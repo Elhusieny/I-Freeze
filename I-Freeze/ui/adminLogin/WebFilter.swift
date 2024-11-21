@@ -10,8 +10,8 @@ struct WebFilter: View {
     var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
-                Color.darkBlue
-                        .ignoresSafeArea()
+                Color(hex: "#175AA8")
+                    .ignoresSafeArea()
                 
                 VStack(spacing: 20) {
                     // Block URLs Section
@@ -47,8 +47,11 @@ struct WebFilter: View {
                         VStack(spacing: 15) {
                             TextField("Enter URL to Whitelist", text: $newUrl)
                                 .padding()
-                                .background(Color.white.opacity(0.7))
-                                .cornerRadius(8)
+                                .background(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
+                                        startPoint: .leading,
+                                        endPoint: .trailing))                                .cornerRadius(8)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 8)
@@ -71,11 +74,9 @@ struct WebFilter: View {
                                 .frame(maxWidth: .infinity)  // Makes the button expand to full width
                                 .background(
                                     LinearGradient(
-                                        gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                                        gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
                                         startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
+                                        endPoint: .trailing))
                                 .cornerRadius(10)
                                 .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
                             }
@@ -138,7 +139,11 @@ struct WebFilter: View {
                 .padding(.top, 5)
         }
         .padding(20)
-        .background(Color.white.opacity(0.3))
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
+                startPoint: .leading,
+                endPoint: .trailing))
         .cornerRadius(15)
     }
 }

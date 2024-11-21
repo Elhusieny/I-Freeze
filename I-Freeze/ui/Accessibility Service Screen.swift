@@ -6,8 +6,8 @@ struct AccessibilityServiceScreen: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.darkBlue
-                        .ignoresSafeArea()
+                Color(hex: "#175AA8")
+                    .ignoresSafeArea()
 
                 VStack {
                     // Top Image
@@ -77,7 +77,7 @@ struct AccessibilityServiceScreen: View {
                             .frame(width:130)
                             .background(
                                 LinearGradient(
-                                    gradient: Gradient(colors: [Color.darkBlue, Color.lightBlue.opacity(0.7)]),
+                                    gradient: Gradient(colors: [Color.lightBlue, Color.lightBlue.opacity(0.2)]),
                                     startPoint: .leading,
                                     endPoint: .trailing))
                                       .cornerRadius(10)
