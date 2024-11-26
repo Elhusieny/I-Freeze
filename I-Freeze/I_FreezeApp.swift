@@ -32,11 +32,8 @@ struct I_FreezeApp: App {
                 } else {
                     // Check if the user is licensed
                     if isLicensed {
-<<<<<<< HEAD
-                       HomeView() // Navigate to the Home screen if licensed
-=======
+                   
                         HomeView() // Navigate to the Home screen if licensed
->>>>>>> fe623ad367962246827ad0d7e9616be53c4fc471
                     } else {
                         WelcomeScreen() // Navigate to the Welcome screen if not licensed
                     }
