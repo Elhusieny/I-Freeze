@@ -8,13 +8,8 @@ struct SplashScreen: View {
 
     var body: some View {
         ZStack{
-<<<<<<< HEAD
             Color(hex: "#175AA8")
                 .ignoresSafeArea()
-=======
-            Color.darkBlue
-                    .ignoresSafeArea()
->>>>>>> fe623ad367962246827ad0d7e9616be53c4fc471
             VStack {
                 Image("logo") // Replace with your logo image name
                     .resizable()
